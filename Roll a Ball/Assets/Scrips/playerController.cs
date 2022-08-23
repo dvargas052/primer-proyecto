@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class playerController : MonoBehaviour
 {
     public float speed = 0;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public Text dead;
+    public GameObject damage;
+    public int life=100;
+
 
     private Rigidbody rb;
     private int count;
     private float movementX;
     private float movementY;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +29,7 @@ public class playerController : MonoBehaviour
         count =0;
         SetcountText();
         winTextObject.SetActive(false);
+        damage.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,12 +42,22 @@ public class playerController : MonoBehaviour
 
     void SetcountText()
     {
+        dead.text = life.ToString();
+
+
         countText.text = "Count:" + count.ToString();
         if (count >=14 )
         {
             winTextObject.SetActive(true);
         }
+        if (life==0)
+        {
+            damage.SetActive(true);
+        }
     }
+
+
+
 
     private void FixedUpdate()
     {
@@ -50,13 +68,19 @@ public class playerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+
         if(other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
-            count = count + 1;
             SetcountText();
+            count = count + 1;
         }
-
-        
+        if (other.gameObject.CompareTag("enemy"))
+        {
+            other.gameObject.SetActive(false);
+            SetcountText();
+            life -= 50;
+        }
     }
 }
