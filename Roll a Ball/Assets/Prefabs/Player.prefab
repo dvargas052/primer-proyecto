@@ -161,3 +161,6 @@ MonoBehaviour:
   speed: 10
   countText: {fileID: 0}
   winTextObject: {fileID: 0}
+  dead: {fileID: 0}
+  damage: {fileID: 0}
+  life: 100

@@ -1965,7 +1965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1406930809
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2630,7 +2630,7 @@ GameObject:
   - component: {fileID: 2080956219}
   - component: {fileID: 2080956223}
   - component: {fileID: 2080956225}
-  - component: {fileID: 2080956224}
+  - component: {fileID: 2080956226}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2732,21 +2732,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2080956224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080956218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f815548e64d692e45bac93c53ecc4070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  countText: {fileID: 504506561}
-  winTextObject: {fileID: 1406930808}
 --- !u!114 &2080956225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2777,6 +2762,24 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &2080956226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080956218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49aad3336ef8c574fa23a1618ede8746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  countText: {fileID: 504506561}
+  winTextObject: {fileID: 1406930808}
+  dead: {fileID: 0}
+  damage: {fileID: 0}
+  life: 100
 --- !u!1001 &2612187537236884193
 PrefabInstance:
   m_ObjectHideFlags: 0
