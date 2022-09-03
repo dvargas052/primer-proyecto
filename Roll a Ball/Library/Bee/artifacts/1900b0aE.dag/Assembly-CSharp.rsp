@@ -355,7 +355,12 @@
 "Assets/Scrips/CameraController.cs"
 "Assets/Scrips/Nivel1.cs"
 "Assets/Scrips/Nivel2.cs"
+"Assets/Scrips/Nivel3.cs"
+"Assets/Scrips/Nivel4.cs"
+"Assets/Scrips/Nivel5.cs"
+"Assets/Scrips/PLAY.cs"
 "Assets/Scrips/Rotator.cs"
+"Assets/Scrips/Win.cs"
 -langversion:9.0
 
 /deterministic

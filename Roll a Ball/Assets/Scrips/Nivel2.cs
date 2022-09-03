@@ -14,7 +14,7 @@ public class Nivel2 : MonoBehaviour
     public Text dead;
     public GameObject damage;
     public int life = 100;
-    public GameObject heard;
+    //public GameObject heard;
 
 
     private Rigidbody rb;
@@ -82,11 +82,11 @@ public class Nivel2 : MonoBehaviour
             SetcountText();
         }
 
-        if (other.gameObject.CompareTag("Heard")) ;
+        /*if (other.gameObject.CompareTag("Heard")) ;
         {
             other.gameObject.SetActive(false);
             life += 20;
             SetcountText();
-        }
+        }*/
     }
 }

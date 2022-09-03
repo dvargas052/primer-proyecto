@@ -56,10 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scrips\Win.cs" />
     <Compile Include="Assets\Scrips\CameraController.cs" />
+    <Compile Include="Assets\Scrips\PLAY.cs" />
     <Compile Include="Assets\Scrips\Nivel2.cs" />
     <Compile Include="Assets\Scrips\Rotator.cs" />
     <Compile Include="Assets\Scrips\Nivel1.cs" />
+    <Compile Include="Assets\Scrips\Nivel3.cs" />
+    <Compile Include="Assets\Scrips\Nivel4.cs" />
+    <Compile Include="Assets\Scrips\Nivel5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

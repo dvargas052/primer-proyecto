@@ -12,7 +12,7 @@ public class Nivel1: MonoBehaviour
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public Text dead;
-    public GameObject damage;
+    //public GameObject damage;
     public int life = 100;
 
 
@@ -29,7 +29,7 @@ public class Nivel1: MonoBehaviour
         count = 0;
         SetcountText();
         winTextObject.SetActive(false);
-        damage.SetActive(false);
+        //damage.SetActive(false);
     }
 
     // Update is called once per frame
